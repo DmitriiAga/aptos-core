@@ -1,3 +1,8 @@
 git clone https://github.com/DmitriiAga/aptos-core
 cd aptos-core
 ./scripts/dev_setup.sh
+source ~/.cargo/env
+git checkout --track origin/testnet
+export WORKSPACE=testnet
+mkdir ~/$WORKSPACE
+cargo run -p aptos -- genesis generate-keys --output-dir ~/$WORKSPACE
