@@ -1,1 +1,3 @@
 git clone https://github.com/DmitriiAga/aptos-core
+cd aptos-core
+./scripts/dev_setup.sh
